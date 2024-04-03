@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>NEWS-registerArticle</title>
+		
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	
+	<body>
+		<div class="admin_menu">
+			<div class="admin_menu_logo"><img src="images/logo.png"></div>
+			<div class="admin_menu_profile">
+				<img src="images/profile.png">
+				<div class="admin_menu_name">
+					<ul>
+						<li>김도담</li>
+						<li>관리자</li>
+					</ul>
+				</div>
+			</div>
+			
+			<hr style="width:90%;">
+			
+			<div class="admin_menu_list">
+				<ul>
+					<li><a href="#">사용자 관리</a></li>
+					<li><a href="#">관리자 관리</a></li>
+					<li><a href="#">게시판</a></li>
+					<li><a href="#">카테고리 관리</a></li>
+					<li><a href="#">사용량</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		
+		
+		<div class="wrap2">
+			<div class="wrap2_title">
+				<b>게시판 관리 : 신규 기사 등록</b>
+			</div>
+			
+			<div>
+				<table class="wrap2_table1" style="display:flex;width:800px;">
+					<tr>
+						<th>기사 제목</th>
+						<td>
+							<input type="text" name="article title">
+						</td>
+					</tr>
+					<tr>
+						<th>글쓴이</th>
+						<td>
+							<input type="text" name="article title">
+						</td>
+					</tr>
+					<tr>
+						<th>카테고리</th>
+						<td>
+							<select class="selectbox1" onchange="if(this.value) location.href=(this.value);" style="margin-left:10px;">
+								<option value="none">카테고리1</option>
+						        <option value="#">전체</option>
+						        <option value="#">정치</option>
+						        <option value="#">경제</option>
+						        <option value="#">산업</option>
+						        <option value="#">사회</option>
+						        <option value="#">스포츠</option>
+						        <option value="#">연예</option>
+						        <option value="#">미분류</option>
+			    			</select>
+			    			
+			    			<select class="selectbox1" onchange="if(this.value) location.href=(this.value);" style="margin-left:10px;">
+								<option value="none">카테고리2</option>
+						        <option value="#">분류1</option>
+						        <option value="#">분류2</option>						      
+			    			</select>
+						</td>
+					</tr>
+					<tr>
+						<th>개요</th>
+						<td>
+							<input type="text" name="article title">
+						</td>
+					</tr>
+				</table>
+				<br>
+				<table style="border-collapse:collapse">					
+					<tr>
+						<th>사진첨부</th>
+						<td>
+							<input type="file" name="file">
+						</td>
+					</tr>
+				</table>
+				
+				<br>
+				<input type="text" name="txt" style="width:800px;height:200px">
+				
+				<br><br>
+				<div class="wrap2_pass">
+				비밀번호: <input type="password" name="pass" style="width:100px">
+				</div>
+				<div class="wrap2_submit">
+				<input type="submit" name="submit">
+				</div>
+			</div>
+		</div>
+				
+	</body>
+</html>
