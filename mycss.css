@@ -1,0 +1,425 @@
+@charset "UTF-8";
+
+* {
+	font-family: 'Noto Sans KR', sans-serif;
+	list-style:none;
+	text-decoration:none;
+	border-collapse:collapse;
+	margin:0px;
+	padding:0px;
+	color:#000;
+	box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+	width:5px;
+}
+::-webkit-scrollbar-thumb {
+	background: gray;
+}
+::-webkit-scrollbar-track {
+	background: white;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #5f5f5f;
+}
+::-webkit-scrollbar-thumb:active {
+	background: #333333;
+}
+
+
+/* header */
+.inner {
+	width:100%;
+}
+
+.inner > header {
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width:100%;
+	height: 80px;
+	background:#07042e;
+	padding: 0px 20px;
+}
+
+.banner1 {
+	display:flex;
+	align-items: center;
+	gap: 20px;
+}
+.banner1 a {
+	font-size: 30px;
+	color: white;
+	font-weight: 600;
+}
+
+.banner1 a:hover {
+	opacity: 0.5;
+}
+
+.banner2 {
+	display: flex;
+	justify-content: flex-end;
+	gap: 20px;
+}
+
+.banner2 li a{
+	color: white;
+	font-size:20px;
+	padding:6px 15px;
+	font-weight: 600;
+	background-color: rgb(55, 34, 246);
+	border-radius: 5px;
+}
+
+.banner2 a:hover {
+	opacity: 0.5;
+}
+
+/* side-bar */
+.side{
+	position:fixed;
+	top:80px;
+	bottom:0px;
+	width: 20%; 
+	background: #07042e;
+	padding: 10px;
+	overflow-y: auto;
+	transition: 0.5s;
+}
+
+.side-home {
+	position: sticky;
+	top:0;
+	background: rgb(55, 34, 246);
+	border-radius: 5px;
+}
+
+.side #home {
+	color: white;
+	font-size:20px;
+	font-weight: 600;
+}
+
+.side #home:hover {
+	opacity: 0.5;
+}
+
+.menu {
+	width:80%;
+}
+.menu .sub-categories{
+	display:none;
+}
+.menu span {
+	color: white;
+	font-size:15px;
+	font-weight: 500;
+	margin-left:10px;
+}
+
+.menu i{
+	color: white;
+	font-size:15px;
+	font-weight: 500;
+}
+.menu a {
+	display:block;
+	line-height: 60px;
+	transition: 0.5s;
+	color: white;
+	font-size:15px;
+	font-weight: 500;
+}
+
+.menu a:hover {
+	background:#6c6996;
+	opacity: 0.5;
+	padding-left: 20px;
+	margin: 5px;
+	border-radius: 5px;
+}
+
+.menu > li:hover{
+	ul {
+		display:block;
+		margin:10px;
+		padding: 10px;
+	}
+	ul a:hover {
+		background: #a5e7f0;
+		color: black;
+		opacity: 0.5;
+		border-radius: 5px;
+	}
+} 
+
+.side .manage {
+	position: sticky;
+	bottom: 0;
+	background: rgb(55, 34, 246);
+	border-radius: 5px;
+	text-align: center;
+
+} 
+
+.side .manage a {
+	color: white;
+	font-size:20px;
+	font-weight: 600;
+}
+
+.side .manage a:hover {
+	opacity: 0.5;
+} 
+
+/* contents */
+.contents {
+	padding-top:90px;
+	margin-left:21%;
+	transition:0.5s;
+}
+
+.contents:after {
+	width:100%;
+	content: '';
+	display:block; 
+	clear:both;
+}
+
+.con{
+	display:inline-block;
+	width:100%;
+	transition:0.5s;
+}
+
+.con hr {
+	border: 1px solid black;
+	width:100%;
+	margin-top:5px;
+	margin-bottom:0;
+}
+
+.con header {
+	display:flex;
+	position: sticky;
+	top:80px;
+	/* 어느 위치로 stick 될 것인지 */
+	background:#6c6996;
+	padding:10px;
+}
+
+.con header a {
+	font-size: 20px;
+	font-weight:600;
+	color:white;
+}
+
+.con .total {
+	margin-right:10px;
+} 
+
+.con .total a:hover {
+	opacity: 0.5;
+}
+
+.con .update a:hover {
+	opacity: 0.5;
+}
+
+.con .news-infor {
+	display:flex;
+	justify-content: space-between;
+	background-color:#bcbbc7;
+	padding: 5px;
+}
+
+.con .news-infor a:hover{
+	opacity: 0.5;
+}
+
+.con .news-view a:hover{
+	opacity: 0.5;
+}
+.con .news-total div {
+	width:100%;
+	min-height: 350px;
+	margin: 10px;
+}
+
+.con .news-total img {
+	float: right;
+	width: 300px;
+	height: 300px;
+	margin: 10px;
+}
+.news .news-contents {
+	width:100%;
+	height: 100px;
+	text-align: center;
+	background-color: white;
+}
+
+.news .news-contents .texts{
+	width:80%;
+}
+
+.texts div {
+	max-height:100px;
+	overflow:hidden;
+}
+
+.news .news-contents .news-thumbnails{
+	width:20%;
+}
+.news-thumbnails img {
+	width:100%;
+	height:100%;
+}
+
+.con .inputs,
+ .con .category-managing,
+  .con .category-update,
+   .con .news-managing,
+    .con .login,
+     .con .news-view {
+	margin:10px;
+}
+
+.con .news-searching {
+	display: flex;
+	justify-content: flex-end;
+	margin: 25px 0px;
+}
+
+.con .news-searching span{
+	margin-left:10px;
+}
+
+.con .category-container-top, 
+ .con .news-container-top {
+	display: flex;
+	justify-content: space-between;
+	margin: 5px 5px;
+}
+
+.con .category-container-top div,
+ .con .news-container-top div {
+	font-size:20px;
+	font-weight: 600;
+	text-align:center;
+	flex: 1;
+}
+
+.con .category-container .item,
+ .con .news-container .item{
+	text-align:center;
+	flex: 1;
+}
+
+.con .category-container,
+ .con .news-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 5px 5px;
+}
+
+.con .category-update .code-infor,
+ .con .login .login-infor {
+	margin: 5px;
+}
+
+.con .login .login-infors {
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 50px;
+}
+
+.con .login .login-infor {
+	text-align: center;
+}
+.con .inputs .enter-top {
+	display: flex;
+	justify-content: space-between;
+}
+
+.con .inputs .enter {
+	margin-right: 10px;
+}
+
+.con .inputs .funs,
+  .con .category-update .funs {
+	display: flex;
+	justify-content: space-between;	
+	margin-top:5px;
+}
+
+.con .category-managing .funs,
+  .con .news-managing .funs, 
+   .con .news-view .funs {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 5px;
+}
+
+.con .login .funs {
+	display: flex;
+	justify-content: center;
+	margin-top: 5px;
+}
+.funs a {
+	font-size:15px;
+	color: white;
+	background:rgb(55, 34, 246);
+	border-radius: 5px;
+	padding: 5px;
+}
+.funs a:hover {
+	opacity: 0.5;
+}
+
+.funs input {
+	font-size:15px;
+	color: white;
+	background:rgb(55, 34, 246);
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.funs input:hover {
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+.contents .page {
+	text-align:center;
+}
+@media screen and (max-width: 1000px){
+	  .banner1, .banner2 {
+        flex-wrap: nowrap; /* 줄 바꿈 없이 가로로 배열되도록 설정 */
+        gap: 10px; /* 간격 설정 */
+    }
+    
+    .banner1 a, .banner2 li a {
+        font-size: 15px; /* 폰트 크기 줄이기 */
+        padding: 5px 10px; /* 패딩 줄이기 */
+    }
+    
+    .side {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    
+    .contents {
+        margin-left: 0;
+    }
+
+    .con {
+        width: 100%;
+        margin-left: 0;
+    }
+}
